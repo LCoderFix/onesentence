@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <com.volantgoat.onesentence.View.TitleBar
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_login_textname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:text="手机号登录"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+
+
+    <LinearLayout
+        android:id="@+id/tel_rootlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <LinearLayout
+            android:layout_width="61dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spinner"
+                android:layout_width="49dp"
+                android:layout_height="match_parent"
+                android:background="@null" />
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/tel_list_back"
+                 />
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:background="@null"
+            android:hint="手机号//邮箱"
+            android:textColor="@color/black_tel"
+            android:textColorHint="#aaa"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <include layout="@layout/common_split_line" />
+
+</LinearLayout>
