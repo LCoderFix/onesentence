@@ -9,7 +9,7 @@
     <com.volantgoat.onesentence.View.TitleBar
         android:id="@+id/title"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="60dp"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -27,29 +27,28 @@
         android:id="@+id/tel_rootlayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp">
+        android:layout_marginTop="50dp">
 
         <LinearLayout
+            android:id="@+id/spinner_layout"
             android:layout_width="61dp"
             android:layout_height="match_parent"
             android:gravity="center_vertical"
             android:orientation="horizontal">
             <androidx.appcompat.widget.AppCompatSpinner
                 android:id="@+id/spinner"
-                android:layout_width="49dp"
+                android:layout_width="61dp"
                 android:layout_height="match_parent"
-                android:background="@null" />
-            <ImageView
-                android:layout_width="10dp"
-                android:layout_height="10dp"
-                android:background="@drawable/tel_list_back"
-                 />
+                android:background="@drawable/spinner_bg" />
+
+
         </LinearLayout>
 
         <EditText
+            android:id="@+id/edit_text_username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="12dp"
+            android:layout_marginLeft="18dp"
             android:background="@null"
             android:hint="手机号//邮箱"
             android:textColor="@color/black_tel"
@@ -58,5 +57,84 @@
     </LinearLayout>
 
     <include layout="@layout/common_split_line" />
-
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="18dp">
+        <EditText
+            android:id="@+id/edit_text_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="请输入手机验证码"
+            android:textColor="@color/black_tel"
+            android:textColorHint="#aaa"
+            android:textSize="16dp"
+            android:layout_marginLeft="18dp"/>
+        <TextView
+            android:id="@+id/text_view_get_code"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:textSize="12dp"
+            android:textColor="#aaa"
+            android:text="获取验证码"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <include layout="@layout/common_split_line" />
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:text="登录"
+        android:textColor="#fff"
+        android:background="@drawable/bg_button_login_true"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp">
+        <TextView
+            android:id="@+id/text_view_login_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:text="免密登录"
+            android:textColor="@color/dark_red"/>
+        <TextView
+            android:id="@+id/text_view_forget_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="忘记密码?"
+            android:layout_alignParentRight="true"
+            android:textSize="12dp"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="50dp">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/qq"/>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/wechat"
+            android:layout_marginLeft="60dp"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/login_details"
+        android:gravity="bottom|center_horizontal"
+        android:layout_marginBottom="30dp"
+        android:textSize="12dp"
+        android:textColor="#aaa"/>
 </LinearLayout>

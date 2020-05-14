@@ -2,6 +2,7 @@ package com.volantgoat.onesentence.Activity.Main;
 
 import android.app.Dialog;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 
 import androidx.annotation.Nullable;
@@ -19,7 +20,6 @@ public class MainActivity extends BaseActivity {
         return R.layout.activity_main;
 
     }
-
     @Override
     public void initViews() {
 

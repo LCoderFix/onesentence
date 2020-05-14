@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">onesentence</string>
+    <string name="login_details" >未注册一言账号的手机号，登录时将自动登录</string>
 </resources>

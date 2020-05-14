@@ -22,4 +22,6 @@
     <color name="actionsheet_red">#FD4A2E</color>
     <color name="actionsheet_gray">#508F8F8F</color>
     <color name="gray">#aaa</color>
+    <color name="drop_gray">#50E2DEDE</color>
+    <color name="dark_red">#B61111</color>
 </resources>
